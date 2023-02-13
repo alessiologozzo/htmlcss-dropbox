@@ -7,11 +7,25 @@
 :root {
   --minWidth: 1100px;
   --headerHeight: 3.5rem;
+  --logoSize: 8rem;
   --bgBlue: #0061ff;
   --bgLightBlue: #b4d0e7;
+  --bgLightGreen: #a2d39b;
+  --bgPrugna: #61082b;
+  --bgLightGrey: #f5f5f5;
+  --bgRed: #d5001f;
+  --bgTurchese: #0093ce;
+  --bgLightRed: #ff1c1c;
+  --bgDarkBlue: #0d2481;
+  --bgGold: #ffd830;
+  --cardBorderColor: #aaaaaa;
+  --lightBlackText: #7e7e7e;
   --h1FontSize: 3.6rem;
   --h2FontSize: 2.5rem;
   --h3FontSize: 2rem;
+  --h4FontSize: 1.6rem;
+  --h5FontSize: 1.2rem;
+  --cardRightMargin: 3rem;
 }
 body {
   background-color: white;
@@ -21,9 +35,11 @@ body {
 a {
   text-decoration: none;
 }
+.aColorBlack a {
+  color: black;
+}
 .dFlex {
   display: flex;
-  flex-flow: row nowrap;
 }
 .dFlexColumn {
   display: flex;
@@ -31,9 +47,6 @@ a {
 }
 .spaceBetween {
   justify-content: space-between;
-}
-.paddingLR {
-  padding: 0 0.6rem;
 }
 .fStart {
   align-items: flex-start;
@@ -44,11 +57,83 @@ a {
 .justifyCenter {
   justify-content: center;
 }
+.wrap {
+  flex-wrap: wrap;
+}
+.alignSelfCenter {
+  align-self: center;
+}
+.gap05 {
+  gap: 0.5rem;
+}
 .gap {
   gap: 1rem;
 }
 .gap2 {
   gap: 2rem;
+}
+.gap3 {
+  gap: 3rem;
+}
+.gap4 {
+  gap: 4rem;
+}
+.padding06 {
+  padding: 0.6rem;
+}
+.padding {
+  padding: 1rem;
+}
+.paddingLR06 {
+  padding: 0 0.6rem;
+}
+.paddingLR2 {
+  padding: 0 2rem;
+}
+.paddingTop {
+  padding-top: 1rem;
+}
+.paddingTop2 {
+  padding-top: 2rem;
+}
+.paddingTop3 {
+  padding-top: 3rem;
+}
+.paddingTop6 {
+  padding-top: 6rem;
+}
+.paddingTop10 {
+  padding-top: 10rem;
+}
+.paddingBottom2 {
+  padding-bottom: 2rem;
+}
+.paddingBottom3 {
+  padding-bottom: 3rem;
+}
+.paddingBottom6 {
+  padding-bottom: 6rem;
+}
+.paddingLeft {
+  padding-left: 1rem;
+}
+.paddingLeft2 {
+  padding-left: 2rem;
+}
+.paddingLeft4 {
+  padding-left: 4rem;
+}
+.paddingRight2 {
+  padding-right: 2rem;
+}
+.paddingRight3 {
+  padding-right: 3rem;
+}
+.paddingRight6 {
+  padding-right: 6rem;
+}
+.marginTop3 {
+  margin-top: 3rem;
 }
 ul {
   list-style: none;
@@ -56,12 +141,15 @@ ul {
 .blueButton {
   background-color: var(--bgBlue);
   color: white;
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 .whiteButton {
   background-color: white;
   color: black;
-  padding: 0.5rem;
+  padding: 0.8rem;
+}
+.border {
+  border: 1px solid black;
 }
 .blueButton:hover {
   opacity: 0.7;
@@ -78,11 +166,45 @@ ul {
 .h3FontSize {
   font-size: var(--h3FontSize);
 }
+.h4FontSize {
+  font-size: var(--h4FontSize);
+}
+.h5FontSize {
+  font-size: var(--h5FontSize);
+}
+h1 {
+  font-size: var(--h1FontSize);
+}
+h2 {
+  font-size: var(--h2FontSize);
+}
+h3 {
+  font-size: var(--h3FontSize);
+}
+h4 {
+  font-size: var(--h4FontSize);
+}
+h5 {
+  font-size: var(--h5FontSize);
+}
 .translateY20 {
   transform: translate(0, 20%);
 }
 .translateY40 {
   transform: translate(0, 40%);
+}
+.lightBlackText {
+  color: var(--lightBlackText);
+}
+.blueText {
+  color: var(--bgBlue);
+}
+.textUnderline {
+  text-decoration: underline;
+}
+.hover:hover,
+.hover:hover a .hover {
+  background-color: #f2eee8;
 }
 /* /general */
 
@@ -109,9 +231,8 @@ nav ul li {
 nav ul li a {
   height: 100%;
 }
-nav ul .hover:hover,
-nav ul .hover:hover a .hover {
-  background-color: #f2eee8;
+nav .logo {
+  width: var(--logoSize);
 }
 nav ul:first-child li:first-child {
   margin-right: 0.5rem;
@@ -132,21 +253,106 @@ nav ul:last-child li:last-child {
   min-width: var(--minWidth);
   margin: 0 auto;
 }
+.minWidth {
+  min-width: var(--minWidth);
+}
 .bgLightBlue {
   background-color: lightblue;
-  padding-top: 2rem;
+}
+.bgLightGreen {
+  background-color: var(--bgLightGreen);
+}
+.bgPrugna {
+  background-color: var(--bgPrugna);
+}
+.bgLightGrey {
+  background-color: var(--bgLightGrey);
+}
+.bgRed {
+  background-color: var(--bgRed);
+}
+.bgTurchese {
+  background-color: var(--bgTurchese);
+}
+.bgLightRed {
+  background-color: var(--bgLightRed);
+}
+.bgDarkBlue {
+  background-color: var(--bgDarkBlue);
+}
+.bgGold {
+  background-color: var(--bgGold);
 }
 .parentWidth {
   width: 100%;
 }
-.jumbo {
+.parent65 {
   width: 65%;
 }
-.parent30 {
+.parent35 {
   width: 35%;
 }
-.jumbo img {
+.parent55 {
+  width: 55%;
+}
+.parent45 {
+  width: 45%;
+}
+.parent50 {
+  width: 50%;
+}
+.parent65.jumbo img {
   width: 100%;
   filter: drop-shadow(25px 25px 19px rgba(0, 0, 0, 0.15));
+}
+.card {
+  width: calc((100% - var(--cardRightMargin)) / 3);
+}
+.cardBorder {
+  border: 1px solid var(--cardBorderColor);
+}
+.hrWidth {
+  width: 20%;
+}
+.littleCard {
+  width: calc((100% - var(--littleCardRightMargin)) / 3);
+}
+hr {
+  height: 1px;
+  background-color: var(--cardBorderColor);
+  border: none;
+}
+.cardRightMargin {
+  margin-right: var(--cardRightMargin);
+}
+.horizontalCard {
+  width: 100%;
+  border: 1px solid var(--cardBorderColor);
+}
+#imgPartner {
+  width: 100%;
+  filter: drop-shadow(25px 25px 19px rgba(0, 0, 0, 0.15));
+}
+.card .imgContainer img {
+  width: 100%;
+}
+.element {
+  width: calc(100% / 3);
+}
+.element .unit {
+  width: 50%;
+  height: 250px;
+}
+.element .unit .bgLightGreen {
+  height: 100%;
+}
+.element svg {
+  width: 50%;
+}
+.element .weirdSvg svg {
+  width: 90%;
+}
+.fillWhite svg {
+  fill: white;
 }
 /* /main */
