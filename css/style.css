@@ -1,0 +1,84 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --headerHeight: 3.5rem;
+  --bgBlue: #0061ff;
+}
+body {
+  background-color: white;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.dFlex {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.paddingLR {
+  padding: 0 0.6rem;
+}
+.grow {
+  flex-grow: 1;
+}
+.alignCenter {
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.blueButton {
+  background-color: var(--bgBlue);
+  color: white;
+  padding: 0.5rem;
+}
+.whiteButton {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+}
+.blueButton:hover {
+  opacity: 0.7;
+}
+
+/* /general */
+
+/* nav */
+nav {
+  width: 100vw;
+  height: var(--headerHeight);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav ul {
+  height: 100%;
+}
+nav ul li {
+  height: 100%;
+}
+nav ul li a {
+  height: 100%;
+}
+nav ul .hover:hover,
+nav ul .hover:hover a .hover {
+  background-color: #f2eee8;
+}
+nav ul:first-child li:first-child {
+  margin-right: 0.5rem;
+}
+nav ul:last-child li:last-child {
+  margin-left: 0.5rem;
+}
+/* /nav */
