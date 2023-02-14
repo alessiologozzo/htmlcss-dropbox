@@ -99,11 +99,17 @@ a {
 .paddingTop3 {
   padding-top: 3rem;
 }
+.paddingTop4 {
+  padding-top: 4rem;
+}
 .paddingTop6 {
   padding-top: 6rem;
 }
 .paddingTop10 {
   padding-top: 10rem;
+}
+.paddingBottom {
+  padding-bottom: 1rem;
 }
 .paddingBottom2 {
   padding-bottom: 2rem;
@@ -113,6 +119,9 @@ a {
 }
 .paddingBottom6 {
   padding-bottom: 6rem;
+}
+.paddingBottom10 {
+  padding-bottom: 10rem;
 }
 .paddingLeft {
   padding-left: 1rem;
@@ -356,3 +365,13 @@ hr {
   fill: white;
 }
 /* /main */
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+}
+footer a {
+  color: white;
+}
+/* /footer */
