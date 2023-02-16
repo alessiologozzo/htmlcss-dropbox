@@ -106,6 +106,9 @@ a {
 .paddingLR2 {
   padding: 0 2rem;
 }
+.paddingTop04 {
+  padding-top: 0.4rem;
+}
 .paddingTop06 {
   padding-top: 0.6rem;
 }
@@ -126,6 +129,9 @@ a {
 }
 .paddingTop10 {
   padding-top: 10rem;
+}
+.paddingBottom04 {
+  padding-bottom: 0.4rem;
 }
 .paddingBottom06 {
   padding-bottom: 0.6rem;
